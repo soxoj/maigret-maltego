@@ -1,0 +1,1 @@
+from .Maigret import Maigret
