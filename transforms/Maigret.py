@@ -1,7 +1,11 @@
 import asyncio
 import logging
-from mock import Mock
 import sys
+
+try:
+    from mock import Mock
+except ImportError:
+    from unittest.mock import Mock
 
 from maltego_trx.entities import Alias, URL
 from maltego_trx.transform import DiscoverableTransform
